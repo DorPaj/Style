@@ -1,0 +1,51 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid black;
+}
+
+#zielony, #niebieski, #czerwony, #zolty, #platki {
+	font-size: 24px;
+	padding: 10px;
+	float: left;
+	border: 2px solid black;
+	background-color: #cccccc;
+}
+
+.container {
+	float: left;
+	width: 50%;
+}
+
+.clear {
+	clear: both;
+}
+
+#zielony:hover ~ .triangle {
+	border-bottom: 100px solid green;
+}
+
+#niebieski:hover ~ .triangle {
+	border-bottom: 100px solid blue;
+}
+
+#czerwony:hover ~ .triangle {
+	border-bottom: 100px solid red;
+}
+
+#zolty:hover ~ .triangle {
+	border-bottom: 100px solid yellow;
+}
+
+img {
+	width: 120px;
+	height: 120px;
+	margin-top: 120px;
+	margin-left: 120px;
+}
+
+#platki:hover ~ img {
+	content: url("kwiat1.svg");
+}
